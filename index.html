@@ -2,29 +2,35 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="INFO 343 Lab 7, AJAX and Mashups">
-        <meta name="author" content="YOUR UW NET ID">
+        <meta name="description" content="Lab 7 Info 343: Mashups w/ Ajax">
+        <meta name="author" content="gulabry">
         <title>Earthquakes!</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+
         <h1>Earthquakes Recorded Over the Last 7 Days</h1>
+
+        <p class="filters">Minimum Magnitude: 
+            <input type="number" class="min-magnitude" value="0" min="0" max="10" step="0.1"> 
+            <button class="refresh-button">Refresh</button>
+        </p>
+        
         <p class="message"></p>
 
         <div class="map-container"></div>
+
+        <div><a href="https://github.com/ElliotSchmelliot/lab7">Lab 7 Repo</a></div>
 
         <!-- hot link to jQuery 2.0.3 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         
         <!-- Google Maps API library -->
-        <!-- NOTE: the vale in the 'key' query string parameter is my API key
-                if you have your own Google API key, replace the value of the
-                'key' query string parameter with your own key
-                to get a key, go to https://code.google.com/apis/console
-        -->
+
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqnfFcZYL5k3Tav9kCUmZOSC-42yJupmc&amp;sensor=false"></script>
         
         <!-- our own JavaScript -->
+
         <script src="js/earthquakes.js"></script>
     </body>
 </html>
